@@ -1,5 +1,5 @@
 /* Utility functions - Version 1.1.0
-   Copyright (c) 2024 Samuel Lourenço
+   Copyright (c) 2022-2024 Samuel Lourenço
 
    This library is free software: you can redistribute it and/or modify it
    under the terms of the GNU Lesser General Public License as published by
