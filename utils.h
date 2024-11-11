@@ -1,5 +1,5 @@
-/* Utility functions - Version 1.1.0
-   Copyright (c) 2022-2024 Samuel Lourenço
+/* Utility functions - Version 1.0.0
+   Copyright (c) 2022 Samuel Lourenço
 
    This library is free software: you can redistribute it and/or modify it
    under the terms of the GNU Lesser General Public License as published by
@@ -22,7 +22,6 @@
 #define UTILS_H
 
 // Includes
-#include <cstdint>
 #include <string>
 
 namespace Utils
@@ -31,14 +30,6 @@ bool isInteger(char *value);
 bool isInteger(std::string value);
 bool isNumber(char *value);
 bool isNumber(std::string value);
-void reverse(uint8_t &value);
-void reverse(uint16_t &value);
-void reverse(uint32_t &value);
-void reverse(uint64_t &value);
-uint8_t reversed(uint8_t value);
-uint16_t reversed(uint16_t value);
-uint32_t reversed(uint32_t value);
-uint64_t reversed(uint64_t value);
 }
 
 #endif  // UTILS_H
