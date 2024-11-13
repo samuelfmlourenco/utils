@@ -1,4 +1,4 @@
-/* Utility functions - Version 1.1.0
+/* Utility functions - Version 1.1.1
    Copyright (c) 2022-2024 Samuel Lourenço
 
    This library is free software: you can redistribute it and/or modify it
@@ -53,18 +53,18 @@ bool Utils::isNumber(char *value)
     if (value[0] != '+' && value[0] != '-' && value[0] != '.' && (value[0] < '0' || value[0] > '9')) {  // Number is not valid if the first character is not a '+', '-', '.', nor a digit
         retval = false;
     } else {
-        bool dp_exists = false;
+        bool dpExists = false;
         if (value[0] == '.') {  // If character is a decimal point
-            dp_exists = true;
+            dpExists = true;
         }
         size_t len = strlen(value);
         for (size_t i = 1; i < len; ++i) {
-            if ((value[i] != '.' || dp_exists) && (value[i] < '0' || value[i] > '9')) {  // Number is not valid if subsequent characters are not digits or if there is more than one decimal point
+            if ((value[i] != '.' || dpExists) && (value[i] < '0' || value[i] > '9')) {  // Number is not valid if subsequent characters are not digits or if there is more than one decimal point
                 retval = false;
                 break;
             }
             if (value[i] == '.') {  // As before, if character is a decimal point
-                dp_exists = true;
+                dpExists = true;
             }
         }
     }
