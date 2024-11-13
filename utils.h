@@ -1,4 +1,4 @@
-/* Utility functions - Version 1.1.0
+/* Utility functions - Version 1.1.1
    Copyright (c) 2022-2024 Samuel Lourenço
 
    This library is free software: you can redistribute it and/or modify it
